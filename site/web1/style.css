@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'Urbanist-SemiBoldItalic'; 
+    src: url('fonts/Urbanist-SemiBoldItalic.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Urbanist-VariableFont_wght'; 
+    src: url('fonts/Urbanist-VariableFont_wght.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SulphurPoint-Bold'; 
+    src: url('fonts/SulphurPoint-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Urbanist-VariableFont_wght', 'Urbanist-SemiBoldItalic', 'SulphurPoint-Bold', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 2%;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+h1 {
+    text-align: left;
+    margin: 1% 2.5% 0% 2.5%;
+    font-size: clamp(1rem, 6vw, 2.3rem);
+}
+
+p {
+    text-align: left;
+    margin: 1% 0% 3% 0%;
+    font-family:  'SulphurPoint-Bold', sans-serif;
+    font-size: clamp(0.5rem, 6vw, 1rem);
+    color: #000000;
+    border-radius: 20px;
+}
+
+.div-line {
+    width: 90%;
+    margin: 15px 15px 15px 15px;
+    text-align: left;
+    justify-content: left;
+}
+
+h2 {
+    text-align: left;
+    width: 100%;
+    margin: 0% 0% 3% 0%;
+    margin-bottom: 5px;
+    color: #000000;
+    font-family:  'SulphurPoint-Bold', sans-serif;
+    font-size: clamp(1rem, 6vw, 1.8rem);
+}
+
+.main-image {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    width: 100%;
+    gap: 10%;
+    align-items: center;
+    border-radius: 20px; 
+    margin-bottom: 7%;
+}
+
+.team img {
+    border-radius: 20px;
+    width: 50%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    display: block;
+    margin: auto;
+    opacity: 0.7;
+}
+
+.team img:hover{
+    transform: scale(1.04);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.team text {
+    margin-top: 0%;
+}
+
+.project-block {
+    opacity: 0.3;
+    margin: 5% 5% 5% 5%;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-block:hover {
+    opacity: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+.container img:hover{
+    border-radius: 10px;
+    transform: scale(1.04);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+.container h2 {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    font-family:  'SulphurPoint-Bold', sans-serif;
+    font-size: clamp(1rem, 6vw, 1.8rem);
+}
+
+.text-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+}
+
+.chapter {
+    width: 90%;
+    height: auto;
+    margin: 1% 5% 1% 5%;
+}
+
+
+details {
+    width: 100%; 
+    margin: 0px 0; 
+}
+
+details > div {
+    opacity: 0;
+    transition: opacity 1.5s ease-in, max-height 0.5s ease-in;
+}
+
+details[open] > div {
+    opacity: 1;
+}
+
+summary {
+    font-family: 'Urbanist-VariableFont_wght', 'SulphurPoint-Bold', sans-serif;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer; 
+    text-align: left; 
+    font-size: xx-large;
+    font-weight: bold; 
+    font-size: clamp(1rem, 6vw, 2.3rem);
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+}
+
+details[open] > summary {
+    opacity: 1;
+    color: rgb(205, 118, 60);
+}
+
+summary:hover {
+    width: 100%;
+    scale: 1.02;
+    opacity: 1;
+    color: #cd763c;
+}
+
+.summary {
+    list-style: square;
+}
+
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 20px;             
+    border-radius: 30px;      
+    margin-top: 2%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: medium;
+}
+
+.contact-section h3 {
+    color: #000000; 
+}
+
+.contact-section p {
+    color: #000000; 
+    line-height: 1.6; 
+}
+
+form {
+    justify-content: center;
+    padding: 20px;
+    font-size: medium;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+form:hover {
+    scale: 1.01;
+    padding: 20px;
+    font-size: medium;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    width: 100;
+}
+
+.form-row input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-row button {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(96, 117, 117);
+    color: white;
+    font-size: small;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form-row button:hover {
+    background-color: #cd763c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
