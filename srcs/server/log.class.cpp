@@ -33,6 +33,8 @@ void    log::loginfo(int type, std::string info)
 void    log::logResp(const ServerInfo& matchconf, int status, std::string StatusMsg)
 {
     std::stringstream info;
+    if (matchconf.getIp() == "0.0.0.0" || matchconf.getPort() == 0)
+        return;
     info << matchconf.getIp() << ":" << matchconf.getPort() << "  " << status << " " <<  StatusMsg;
     loginfo(T_RESP, info.str());
 }
