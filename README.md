@@ -6,13 +6,16 @@ This project aims to implement core functionalities of a HTTP server such as **N
 
 ---
 
+see demo
+https://www.youtube.com/watch?v=sQe9dU8mYRI
+
 ## 🌐 Features
 
 - **HTTP/1.1 compliant**
   - Persistent connections (keep-alive by default)
   - Chunked transfer encoding support
 - **IO Multiplexing** with `epoll`
-- Supports **GET**, **POST**, and **DELETE** methods
+- Supports **GET**, **POST**, **HEAD**, and **DELETE** methods
 - **CGI** support:
   - Dynamically execute scripts (e.g. Python, PHP, etc.)
   - Configurable CGI extensions and interpreters
