@@ -7,7 +7,7 @@ This project aims to implement core functionalities of a HTTP server such as **N
 ---
 
 see demo
-https://www.youtube.com/watch?v=sQe9dU8mYRI
+https://youtu.be/lMREugOBZ3M
 
 ## 🌐 Features
 
