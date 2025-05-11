@@ -8,6 +8,9 @@ This project aims to implement core functionalities of a HTTP server such as **N
 
 see demo
 https://youtu.be/3btqIa93FJ4
+tester script
+https://www.youtube.com/watch?v=sRs5bOBlLHY
+Note that the tester corresponds to default configuration file.
 
 ## 🌐 Features
 
