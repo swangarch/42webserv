@@ -20,6 +20,8 @@ connection::connection(int clientfd, const std::vector<ServerInfo>& wconf, const
     _connection = "keep-alive";
     _ip = ip;
     _cgi.reset();
+    if (!server)
+        throw AnyErrorException("Cannot create connection.");
     _server = server;
     _server->addReqTimeStamp(_clientfd);
 }
@@ -417,7 +419,7 @@ void       connection::processCgiResp()
     {
         if ( _ReqProcessed == PROCESSED)
             return;
-        log::loginfo(T_ERR, "Noting returned form CGI");
+        log::loginfo(T_ERR, "Nothing returned form CGI");
         this->join_response(502);
     }
     else
